@@ -1,0 +1,19 @@
+@mixin select-color($element-width) {
+
+  @if $element-width >= 375px {
+    background-color: #f05;
+  } @else {
+    background-color: #5f0;
+  }
+
+}
+
+div.small{
+  width: 250px;
+  @include select-color(250px);
+}
+
+div.big{
+  width: 500px;
+  @include select-color(500px);
+}

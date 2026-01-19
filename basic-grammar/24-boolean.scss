@@ -1,0 +1,20 @@
+@debug 2px == 2px; // true
+@debug 3rem != 1rem; // true
+@debug 100px > 50px; // true
+@debug 2.54cm >= 1in; // true
+@debug 50px < 100px; // true
+@debug 2.54cm <= 1in; // true
+
+// 불리언을 활용한 분기문 사용 예 
+@mixin radius-or-not($size, $circle: false) {
+  width: $size;
+  height: $size;
+
+  @if $circle {
+    border-radius: 16px;
+  }
+}
+
+.square {
+  @include radius-or-not(100px, true);
+}

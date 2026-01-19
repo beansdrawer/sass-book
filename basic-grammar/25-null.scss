@@ -1,0 +1,12 @@
+@use "sass:map";
+@use "sass:list";
+
+$fun-anime: (
+  "korea": "Catch! Teenieping",
+  "japan": "Dragon Ball"
+);
+
+$dragon-ball: "son-guku", "vegeta", "Krillin";
+
+@debug map.get($fun-anime, "mexico"); // null
+@debug list.index($dragon-ball, 4); // null

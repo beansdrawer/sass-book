@@ -1,0 +1,17 @@
+// 각 줄마다 주석으로 콘솔 출력 결과를 표시했습니다. 
+@use 'sass:math';
+
+@debug 99; // 99
+@debug 0.6; // 0.6
+@debug 32px; // 32px
+
+@debug 5px + 2px; // 7px
+@debug 5s - 2s; // 3s
+@debug 5px * 2; // 10px
+@debug math.div(5px, 2); // 2.5px
+
+@debug 1.2e3; // 1200
+@debug 4e-5; // 0.00004
+
+$degrees-per-second: math.div(20deg, 2);
+@debug $degrees-per-second; // 10deg

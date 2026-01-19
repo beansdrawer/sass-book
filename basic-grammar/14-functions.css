@@ -1,0 +1,17 @@
+div.no-argu {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 100, 0);
+}
+
+div.with-argu {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(100, 0, 255);
+}
+
+div.with-default {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(200, 150, 0);
+}/*# sourceMappingURL=14-functions.css.map */

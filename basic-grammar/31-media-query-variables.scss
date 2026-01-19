@@ -1,0 +1,21 @@
+
+// 중단점
+$width-huge: 1200px;
+$width-large: 900px;
+$width-medium: 600px;
+
+div{
+  width: 100px;
+  height: 100px;
+
+  @media screen and (max-width: $width-huge) {
+    background-color: red; 
+  }
+  @media screen and (max-width: $width-large) {
+    background-color: green; 
+  }
+  @media screen and (max-width: $width-medium) {
+    background-color: blue; 
+  }
+}
+

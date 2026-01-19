@@ -1,0 +1,12 @@
+
+$color-list: red orange yellow green blue navy;
+
+@each $a-color in $color-list {
+
+  // 문자열 포맷팅을 이용해 선택자 만들기!
+  .box-#{$a-color} {
+    width: 100px;
+    height: 100px;
+    background-color: $a-color;
+  }
+}

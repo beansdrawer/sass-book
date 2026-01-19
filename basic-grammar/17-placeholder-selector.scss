@@ -1,0 +1,17 @@
+%square-base {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.square {
+  @extend %square-base;
+}
+
+.square__tomato {
+  @extend %square-base;
+  
+  display: block;
+  background-color: tomato;
+}

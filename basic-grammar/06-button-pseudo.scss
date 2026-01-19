@@ -1,0 +1,18 @@
+button{
+  border: none;
+  background: gray;
+  text-transform: uppercase;
+  
+  &:nth-child(1){
+    &:hover{
+      background: red;
+    }
+  }
+
+  &:nth-child(2){
+    &:hover{
+      background: blue;
+    }
+  }
+}
+

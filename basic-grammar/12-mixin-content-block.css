@@ -1,0 +1,11 @@
+button {
+  width: 100px;
+  height: 25px;
+  border-radius: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+button:active {
+  background-color: gray;
+}/*# sourceMappingURL=12-mixin-content-block.css.map */

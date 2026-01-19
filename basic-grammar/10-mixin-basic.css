@@ -1,0 +1,20 @@
+h1 {
+  text-align: left;
+  color: white;
+  background-color: teal;
+  border: 1px solid red;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  background-color: teal;
+  border: 1px solid red;
+}
+
+p {
+  text-align: right;
+  color: white;
+  background-color: teal;
+  border: 1px solid red;
+}/*# sourceMappingURL=10-mixin-basic.css.map */

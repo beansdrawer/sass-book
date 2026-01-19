@@ -1,0 +1,20 @@
+@mixin colored-box-1px {
+  color: white;
+  background-color: teal;
+  border: 1px solid red;
+}
+
+h1{
+  text-align: left;
+  @include colored-box-1px;
+}
+
+h2{
+  text-align: center;
+  @include colored-box-1px;
+}
+
+p{
+  text-align: right;
+  @include colored-box-1px;
+}

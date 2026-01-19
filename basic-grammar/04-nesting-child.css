@@ -1,0 +1,10 @@
+div {
+  width: 100px;
+  height: 100px;
+}
+div > p {
+  color: red;
+}
+div > p > span {
+  color: blue;
+}/*# sourceMappingURL=04-nesting-child.css.map */

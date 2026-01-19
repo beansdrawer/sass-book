@@ -1,0 +1,19 @@
+@mixin set-color($bg-color, $text-color){
+  @content;
+
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+}
+
+button{
+  @include set-color(black, white) {
+    width: 100px;
+    height: 25px;
+    border-radius: 16px;
+  }
+  
+  &:active{
+    background-color: gray;
+  }
+}

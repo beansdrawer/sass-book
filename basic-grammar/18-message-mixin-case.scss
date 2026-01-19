@@ -1,0 +1,15 @@
+@mixin message($bg-color: #5f0) {
+  padding: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: $bg-color;
+}
+
+.good-message {
+  @include message;
+}
+
+.bad-message {
+  @include message(#f05);
+}

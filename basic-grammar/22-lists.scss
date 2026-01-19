@@ -1,0 +1,18 @@
+@use 'sass:list';
+
+$number-list: 11px, 22px, 33px, 44px, 55px;
+
+// 리스트 값 참조하기 
+@debug list.nth($number-list, 2); // 22px
+@debug list.nth($number-list, -2); // 44px
+
+$color-list: red orange yellow green blue navy;
+
+// 리스트 값 추가하기. 원본에 값을 추가하지 않고, 복사본을 반환합니다.
+@debug list.append($color-list, purple); // red orange yellow green blue purple
+
+
+// 리스트 값의 인덱스 조회하기. 값이 없을 시에는 null을 반환합니다. 
+@debug list.index($color-list, yellow); // 3
+@debug list.index($color-list, orange); // 2
+@debug list.index($color-list, purple); // null

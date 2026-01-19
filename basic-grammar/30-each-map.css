@@ -1,0 +1,41 @@
+.box-red {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+}
+
+.box-orange {
+  width: 100px;
+  height: 100px;
+  background-color: #ffa500;
+}
+
+.box-yellow {
+  width: 100px;
+  height: 100px;
+  background-color: #ffff00;
+}
+
+.box-green {
+  width: 100px;
+  height: 100px;
+  background-color: #008000;
+}
+
+.box-blue {
+  width: 100px;
+  height: 100px;
+  background-color: #0000ff;
+}
+
+.box-navy {
+  width: 100px;
+  height: 100px;
+  background-color: #000080;
+}
+
+.box-purple {
+  width: 100px;
+  height: 100px;
+  background-color: #800080;
+}/*# sourceMappingURL=30-each-map.css.map */

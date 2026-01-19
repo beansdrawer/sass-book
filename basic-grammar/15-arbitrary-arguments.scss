@@ -1,0 +1,13 @@
+@use 'sass:list';
+
+@function combine-color($values...) {
+
+  @return rgb(list.nth($values, 1), list.nth($values, 2), list.nth($values, 3));
+}
+
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: combine-color(255, 100, 0);
+}

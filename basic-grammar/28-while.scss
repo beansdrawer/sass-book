@@ -1,0 +1,10 @@
+@function min-value($value, $minimum: 12px) {
+  @while $value > $minimum {
+    $value: $value - 1px;
+  }
+  @return $value;
+}
+
+span {
+  font-size: min-value(32px, 16px);
+}

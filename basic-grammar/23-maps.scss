@@ -1,0 +1,19 @@
+@use 'sass:map';
+
+$number-map: (1: 11px, 2: 22px, 3: 33px, 4 :44px, 5: 55px);
+$color-map: (red:#ff0000, orange:#ffa500, yellow:yellow);
+
+// 맵 값 참조하기 
+@debug map.get($number-map, 9); 
+@debug map.get($color-map, orange); 
+
+// 맵 값 추가하기 
+@debug map.set($number-map, 5, 66px);
+@debug map.set($color-map, green,#008000);
+
+// 맵 값 병합하기 
+@debug map.merge($number-map, $color-map);
+
+// 불변성 확인
+@debug $number-map;
+@debug $color-map;

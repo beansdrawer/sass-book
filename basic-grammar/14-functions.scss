@@ -1,0 +1,34 @@
+@mixin make-square {
+  width: 100px;
+  height: 100px;
+}
+
+@function get-color() {
+
+  @return rgb(255, 100, 0);
+}
+
+@function get-color-with-argu($red-value, $green-value, $blue-value) {
+
+  @return rgb($red-value, $green-value, $blue-value);
+}
+
+@function get-color-with-default($red-value: 255, $green-value: 100, $blue-value: 0) {
+
+  @return rgb($red-value, $green-value, $blue-value);
+}
+
+div.no-argu {
+  @include make-square;
+  background-color: get-color();
+}
+
+div.with-argu {
+  @include make-square;
+  background-color: get-color-with-argu(100, 0, 255);
+}
+
+div.with-default {
+  @include make-square;
+  background-color: get-color-with-default(200, 150, 0);
+}

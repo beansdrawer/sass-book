@@ -1,0 +1,9 @@
+@mixin debug-check($color-code) {
+  @debug $color-code;
+
+  color: $color-code;
+}
+
+p{
+  @include debug-check(#f00ff0);
+}

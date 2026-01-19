@@ -1,0 +1,19 @@
+
+$color-map: (
+  "red":#ff0000, 
+  "orange":#ffa500, 
+  "yellow": #ffff00, 
+  "green": #008000, 
+  "blue": #0000ff,
+  "navy": #000080,
+  "purple": #800080
+);
+
+@each $key, $value in $color-map {
+
+  .box-#{$key} {
+    width: 100px;
+    height: 100px;
+    background-color: $value;
+  }
+}

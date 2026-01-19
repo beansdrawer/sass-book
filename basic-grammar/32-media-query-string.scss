@@ -1,0 +1,21 @@
+
+// 미디어 쿼리 조건
+$width-huge: "screen and (max-width: 1200px)";
+$width-large: "screen and (max-width: 900px)";
+$width-medium: "screen and (max-width: 600px)";
+
+div{
+  width: 100px;
+  height: 100px;
+
+  @media #{$width-huge} {
+    background-color: red; 
+  }
+  @media #{$width-large} {
+    background-color: green; 
+  }
+  @media #{$width-medium} {
+    background-color: blue; 
+  }
+}
+

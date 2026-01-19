@@ -1,0 +1,11 @@
+// to <표현식>의 값을 포함하지 않는 형태
+@for $number-to from 1 to 10 {
+  @debug $number-to;
+}
+
+@debug "----------------- 구분선 -----------------";
+
+// through <표현식>의 값을 포함하는 형태
+@for $number-through from 1 through 10 {
+  @debug $number-through;
+}

@@ -1,0 +1,11 @@
+.square, .square__tomato {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.square__tomato {
+  display: block;
+  background-color: tomato;
+}/*# sourceMappingURL=16-extend-block.css.map */

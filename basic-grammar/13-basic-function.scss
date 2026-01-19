@@ -1,0 +1,14 @@
+@use 'sass:math';
+
+@function get-radius($box-width){
+  @return math.div($box-width, 12);
+}
+
+button {
+  width: 100px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: get-radius(100px);
+}

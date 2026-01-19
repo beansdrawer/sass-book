@@ -1,0 +1,13 @@
+@use 'sass:math';
+
+@mixin calculate-width($rate) {
+  $smartphone-width: 375px;
+  @debug "smartphone width: #{$smartphone-width}";
+  @debug "rate: #{$rate}";
+
+  width: $smartphone-width * $rate;
+}
+
+img{
+  @include calculate-width(0.5);
+}

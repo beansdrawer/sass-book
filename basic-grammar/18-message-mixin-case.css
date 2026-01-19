@@ -1,0 +1,15 @@
+.good-message {
+  padding: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: #5f0;
+}
+
+.bad-message {
+  padding: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: #f05;
+}/*# sourceMappingURL=18-message-mixin-case.css.map */
